@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Arnav Enterprise</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Suture Planet</string>
+    <string name="menu_gallery">Bafna Pharma</string>
+    <string name="menu_slideshow">Puristo Pharma</string>
+    <string name="settings">IMDSL</string>
+    <string name="arnav_enterprises">Arnav Enterprises</string>
+    <string name="mr_image_viewer">MR Image Viewer</string>
+    <string name="medicine_image">Medicine Image</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="account">Virchow Pharma</string>
+</resources>
