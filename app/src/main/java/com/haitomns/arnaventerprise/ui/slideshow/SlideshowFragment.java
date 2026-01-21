@@ -26,7 +26,7 @@ import java.util.ArrayList;
 public class SlideshowFragment extends Fragment {
 
     private FragmentSlideshowBinding binding;
-    private final String[] imageNames = {"GYN.jpg", "ORTHO.jpg", "PAEDIATRIC.jpg", "PHYSICIAN.jpg"};
+    private final String[] imageNames = {"GYN.jpg", "ORTHO.jpg", "PAEDIATRIC.jpg", "PHYSICIAN.jpg", "OSTEO.jpg"};
     private final String folderPath = "puristroImages";
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
@@ -83,7 +83,9 @@ public class SlideshowFragment extends Fragment {
         } else if (imageName.equals("ORTHO.jpg")) {
             imageCollectionImages = new String[]{"PURISTOR_1.jpg", "ORTHO_1.jpg", "ORTHO_2.jpg", "ORTHO_3.jpg", "PURISTOR_2.jpg"};
         } else if (imageName.equals("PAEDIATRIC.jpg")) {
-            imageCollectionImages = new  String[]{"PURISTOR_1.jpg", "PAEDIATRIC_1.jpg", "PAEDIATRIC_2.jpg", "PURISTOR_2.jpg"};
+            imageCollectionImages = new String[]{"PURISTOR_1.jpg", "PAEDIATRIC_1.jpg", "PAEDIATRIC_2.jpg", "PURISTOR_2.jpg"};
+        } else if (imageName.equals("OSTEO.jpg")){
+            imageCollectionImages = new String[]{"OSTEO_1.jpg", "OSTEO_2.jpg"};
         } else {
             imageCollectionImages = new String[]{"PURISTOR_1.jpg", "PHYSICIAN_1.jpg", "PHYSICIAN_2.jpg", "PHYSICIAN_3.jpg", "PHYSICIAN_4.jpg", "PURISTOR_2.jpg"};
         }

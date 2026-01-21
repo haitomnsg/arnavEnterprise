@@ -27,7 +27,7 @@ import java.util.List;
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
-    private final String[] imageNames = {"SP Promo.jpg", "Main SP Promo.jpeg", "ULTRANET.jpg", "NETPTFE.jpg", "NETPLER.jpg", "V-FIX.jpg", "Hemonet.jpg", "CMESH.jpg"};
+    private final String[] imageNames = {"SP Promo.jpg", "Main SP Promo.jpeg", "ULTRANET.jpg", "NETPTFE.jpg", "NETPLER.jpg", "V-FIX.jpg", "Hemonet.jpg", "CMESH.jpg", "Trocar.jpg", "NETBOND.jpeg"};
     private final String folderPath = "suturePlanetImages";
 
 
@@ -106,6 +106,12 @@ public class HomeFragment extends Fragment {
         }
         else if (imageName.equals("Main SP Promo.jpeg")) {
             imageCollectionImages = new String[]{"Netcryl (1).jpeg", "Netcryl (2).jpeg", "Netcryl (3).jpeg", "Netcryl (4).jpeg", "Netcryl (5).jpeg", "Netcryl (6).jpeg", "Netcryl (7).jpeg", "Netcryl (8).jpeg", "Netcryl (9).jpeg", "Netcryl (10).jpeg", "Netcryl (11).jpeg", "Netcryl (12).jpeg", "Netcryl (13).jpeg", "Netcryl (14).jpeg", "Netcryl (15).jpeg", "Netcryl (16).jpeg", "Netcryl (17).jpeg", "Netcryl (18).jpeg", "Netcryl (19).jpeg", "Netcryl (20).jpeg", "Netcryl (21).jpeg", "Netcryl (22).jpeg", "Netcryl (23).jpeg"};
+        }
+        else if (imageName.equals("Trocar.jpg")){
+            imageCollectionImages = new String[]{"Trocar_1.jpg", "Trocar_2.jpg", "Trocar_3.jpg", "Trocar_4.jpg"};
+        }
+        else if (imageName.equals("NETBOND.jpeg")){
+            imageCollectionImages = new String[]{"NETBOND.jpeg"};
         }
         else {
             imageCollectionImages = new String[]{"ABSORBABLE.jpg", "NON-ABSORBABLE.jpg", "NETFIX.jpg"};
