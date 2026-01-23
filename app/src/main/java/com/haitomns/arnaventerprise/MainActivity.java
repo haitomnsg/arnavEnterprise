@@ -2,6 +2,7 @@ package com.haitomns.arnaventerprise;
 
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import androidx.navigation.NavController;
@@ -13,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.haitomns.arnaventerprise.databinding.ActivityMainBinding;
 
+import java.util.Calendar;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -21,6 +24,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // License check
+        Calendar expiryDate = Calendar.getInstance();
+        expiryDate.set(2027, Calendar.JANUARY, 10);
+        if (Calendar.getInstance().after(expiryDate)) {
+            Toast.makeText(this, "License expired", Toast.LENGTH_LONG).show();
+            finish();
+            return;
+        }
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
